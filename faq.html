@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="floating-nav d-flex justify-content-between align-items-center">
+    <div>
+      <a class="navbar-brand" href="#">
+        Ten
+        <span class="ten">Ten</span>
+      </a>
+    </div>
+    <nav class="navbar navbar-expand-md">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Produk
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="makanan_riau.html">Makanan Khas Riau</a></li>
+                <li><a class="dropdown-item" href="snack.html">Snack</a></li>
+                <li><a class="dropdown-item" href="donat.html">Donut</a></li>
+                <li><a class="dropdown-item" href="bake.html">Cake and Bakery</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Promo</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                About Us
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="halaman_testimoni.html">Testimoni</a></li>
+                <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container mb-5">
+    <div class="faq p-4 rounded-4">
+      <h2 class="text-center fw-bold mb-4">Pertanyaan Umum (FAQ)</h2>
+
+      <div class="accordion accordion-flush" id="faqTenTen">
+        <div class="accordion-item bg-transparent">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-transparent fw-bold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faq1">
+              Berapa lama kue tahan di suhu ruang?
+            </button>
+          </h2>
+          <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqTenTen">
+            <div class="accordion-body">
+              Rata-rata
+              <strong>3-4 hari</strong>
+              di suhu ruang karena kami tidak menggunakan pengawet. Jika masuk kulkas bisa tahan hingga 7 hari.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item bg-transparent">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-transparent fw-bold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faq2">
+              Apakah bisa dikirim ke luar kota?
+            </button>
+          </h2>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqTenTen">
+            <div class="accordion-body">
+              <strong>Bisa!</strong>
+              Kami menggunakan kemasan vakum (untuk produk basah) dan packing aman dengan kardus tebal serta bubble
+              wrap. Disarankan pakai ekspedisi kilat (Next Day).
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item bg-transparent">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-transparent fw-bold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faq3">
+              Apakah produk TenTen sudah Halal?
+            </button>
+          </h2>
+          <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqTenTen">
+            <div class="accordion-body">
+              Tentu saja. Seluruh bahan baku dan proses produksi kami terjamin
+              <strong>100% Halal</strong>
+              dan higienis demi kenyamanan konsumen.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item bg-transparent">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-transparent fw-bold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faq4">
+              Toko buka hari apa dan jam berapa?
+            </button>
+          </h2>
+          <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqTenTen">
+            <div class="accordion-body">
+              Outlet kami buka
+              <strong>Setiap Hari</strong>
+              (Senin - Minggu) mulai pukul
+              <strong>08.00 - 21.00 WIB</strong>
+              .
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item bg-transparent">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-transparent fw-bold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faq5">
+              Bisa bayar pakai apa saja?
+            </button>
+          </h2>
+          <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqTenTen">
+            <div class="accordion-body">
+              Kami menerima pembayaran Tunai (Cash), Transfer Bank, dan
+              <strong>QRIS/E-Wallet</strong>
+              (GoPay, OVO, Dana, ShopeePay).
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item bg-transparent">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-transparent fw-bold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faq6">
+              Apakah bisa pesan banyak untuk acara?
+            </button>
+          </h2>
+          <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqTenTen">
+            <div class="accordion-body">
+              Sangat bisa! Kami melayani pesanan partai besar (Bulk Order) untuk acara pernikahan, kantor, atau
+              syukuran dengan
+              <strong>harga spesial</strong>
+              . Silakan hubungi admin H-2 acara.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item bg-transparent">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-transparent fw-bold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faq7">
+              Harus Pre-Order (PO) atau Ready Stock?
+            </button>
+          </h2>
+          <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqTenTen">
+            <div class="accordion-body">
+              Mayoritas produk kami
+              <strong>Ready Stock</strong>
+              setiap hari. Namun jika ingin memesan dalam jumlah banyak atau varian tertentu, disarankan untuk
+              konfirmasi terlebih dahulu.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container py-3">
+      <div class="row">
+        <div class="col-md-4 col-sm-6">
+          <a class="footer-brand" href="#">
+            Ten
+            <span class="ten">Ten</span>
+          </a>
+          <p class="mt-3 text-white-50">
+            Signature Treats, For Every Journey Home. Temukan kelembutan dan cita rasa otentik dari Riau di setiap
+            gigitan.
+          </p>
+          <div class="social-icons-footer mt-4 mb-4">
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-whatsapp"></i></a>
+            <a href="#"><i class="bi bi-envelope-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-6 mb-4 mb-md-0">
+          <h5 class="text-white mb-3">Produk</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white-50">Makanan Khas Riau</a></li>
+            <li><a href="snack.html" class="text-white-50">Snack</a></li>
+            <li><a href="donut.html" class="text-white-50">Donut</a></li>
+            <li><a href="#" class="text-white-50">Cake & Bakery</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-2 col-sm-6 mb-4">
+          <h5 class="text-white mb-3">Informasi</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white-50">Testimoni</a></li>
+            <li><a href="faq.html" class="text-white-50">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <h5 class="text-white mb-3">Hubungi Kami</h5>
+          <ul class="list-unstyled text-white-50">
+            <li>
+              <i class="bi bi-geo-alt-fill me-2"></i>
+              Jalan Sudirman No. 123, Pekanbaru
+            </li>
+            <li>
+              <i class="bi bi-telephone-fill me-2"></i>
+              (0761) 123456
+            </li>
+            <li>
+              <i class="bi bi-envelope-fill me-2"></i>
+              info@tenten.com
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row footer-copy">
+        <div class="col-md-6 text-md-start text-center">
+          <p class="copyright-text-custom">&copy; 2025 TenTen. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-md-end text-center">
+          <a href="#" class="text-white-50">Syarat & Ketentuan</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+  <script src="faq.js"></script>
+</body>
+
+</html>

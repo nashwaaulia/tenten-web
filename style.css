@@ -1,0 +1,512 @@
+:root {
+  --biru-baby: #ecf4fa;
+  --biru-muda: #e3f2fd;
+  --biru-laut: #64b5f6;
+  --kuning-pastel: #fff59d;
+  --kuning-muda: #fffde7;
+  --kuning-tua: #fbc02d;
+  --teks-gelap: #455a64;
+  --biru-gelap: #00496b;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--biru-baby);
+  color: var(--teks-gelap);
+  margin: 0;
+  padding: 0;
+}
+
+.ten {
+  color: var(--kuning-tua);
+}
+
+.text-biru {
+  color: var(--teks-gelap);
+  font-weight: 800;
+}
+
+/* --- NAVBAR --- */
+.floating-nav {
+  margin-left: 2%;
+  position: fixed;
+  z-index: 1000;
+  top: 20px;
+  background-color: rgba(255, 255, 255, 0.95);
+  width: 95%;
+  border-radius: 40px;
+  padding: 0 4%;
+  box-shadow: 0 4px 15px rgba(100, 181, 246, 0.2);
+  border: 1px solid var(--biru-muda);
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link {
+  color: var(--teks-gelap);
+  font-weight: 600;
+}
+
+.navbar-nav .nav-link:hover,
+.dropdown-menu .dropdown-item:hover {
+  color: var(--biru-laut);
+  background-color: transparent;
+}
+
+.navbar-brand {
+  font-size: x-large;
+  font-weight: 800;
+  color: var(--biru-laut) !important;
+}
+
+.nav-link.active-page,
+.dropdown-item.active-page {
+  color: var(--kuning-tua) !important;
+  font-weight: 700;
+}
+
+.nav-link.active-page::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 3px;
+  background-color: var(--kuning-tua);
+  border-radius: 5px;
+}
+
+/* --- COVER --- */
+.cover,
+.cover-profile {
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.cover {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/src/profile/bg.jpg) center/cover no-repeat;
+  min-height: 100vh;
+}
+
+.cover-profile {
+  color: var(--teks-gelap);
+}
+
+.section-title h1,
+.cover h1,
+.cover-profile h1 {
+  font-weight: 800;
+  text-align: center;
+  margin: 4%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cover h1,
+.cover-profile h1 {
+  font-size: 300%;
+}
+
+.section-title h1 {
+  color: var(--teks-gelap);
+  font-size: 2.5rem;
+}
+
+/* Buttons */
+.btn-order,
+.main-footer .btn-contact {
+  background-color: var(--kuning-tua);
+  color: white;
+  padding: 12px 40px;
+  border-radius: 50px;
+  font-weight: bold;
+  border: none;
+  transition: 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-order:hover,
+.main-footer .btn-contact:hover {
+  background-color: #fdd835;
+  transform: translateY(-5px);
+  color: white;
+}
+
+/* Cards */
+.card {
+  border-radius: 20px !important;
+  overflow: hidden;
+  transition: 0.3s;
+  border: 1px solid var(--biru-laut);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(100, 181, 246, 0.6) !important;
+}
+
+.img-product-circle {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 1rem;
+}
+
+/* FAQ */
+.faq {
+  background-color: var(--biru-muda);
+  margin-top: 10%;
+}
+
+/* --- FOOTER --- */
+.main-footer {
+  background-color: var(--teks-gelap);
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.footer-brand {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--biru-laut) !important;
+  text-decoration: none;
+}
+
+.main-footer h5 {
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.main-footer a {
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.main-footer .list-unstyled li {
+  margin-bottom: 10px;
+}
+
+.text-white-50 {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.text-white-50:hover {
+  color: var(--kuning-tua) !important;
+}
+
+.social-icons-footer a {
+  color: white;
+  font-size: 1.5rem;
+  margin-right: 15px;
+}
+
+.social-icons-footer a:hover {
+  color: var(--kuning-tua);
+  transform: translateY(-3px);
+}
+
+.main-footer .btn-contact {
+  color: var(--teks-gelap) !important;
+  padding: 8px 25px;
+}
+
+.footer-copy {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 3%;
+}
+
+/* untuk page produk */
+
+.cover-donat {
+  background: linear-gradient(rgba(85, 88, 93, 0.8), rgba(85, 101, 122, 0.8)),
+    url("https://www.vieraoleholeh.id/wp-content/uploads/2024/07/Brownies-Donat-Mini.jpg") center/cover no-repeat;
+  color: #e0f5ff;
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh; 
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  font-weight: bold;
+}
+
+.cover-donat {
+  margin-top: 0 !important;
+  padding-top: 20px; 
+  }
+
+.cover-snack {
+   background: linear-gradient(rgba(85, 88, 93, 0.8), rgba(85, 101, 122, 0.8)),
+    url("https://i.pinimg.com/1200x/b0/2d/bf/b02dbf1c4967c4581c49235d5789ca24.jpg") center/cover no-repeat;
+  color: #e0f5ff;
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh; 
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  font-weight: bold;
+}
+
+.cover-menu {
+  background: linear-gradient(rgba(85, 88, 93, 0.8), rgba(85, 101, 122, 0.8)),
+    url("https://www.vieraoleholeh.id/wp-content/uploads/2024/07/Fudgy-Brownies-Besar.jpg") center/cover no-repeat;
+  color: #e0f5ff;
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh; 
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  font-weight: bold;
+}
+
+.cover-cake {
+   background: linear-gradient(rgba(85, 88, 93, 0.8), rgba(85, 101, 122, 0.8)),
+    url("https://www.vieraoleholeh.id/wp-content/uploads/2024/07/Sponge-Cake-2048x1887.jpg") center/cover no-repeat;
+  color: #e0f5ff;
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh; 
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  font-weight: bold;
+}
+
+.cover-riau {
+  background: linear-gradient(rgba(44, 53, 62, 0.9), rgba(67, 83, 113, 0.7)),
+    url("https://www.vieraoleholeh.id/wp-content/uploads/2024/07/Dodol-Durian-Kotak.jpg") center/cover no-repeat;
+  color: #e0f5ff;
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh; 
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  font-weight: bold;
+}
+
+
+
+.cover h1 {
+  font-weight: 800;
+  font-size: 300%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+}
+
+
+.judul {
+  font-size: 200%;
+  text-align: center;
+  margin: 5% 10%;
+  font-weight: bold;
+  color: var(--biru-laut);
+}
+
+/* Button */
+.btn-order {
+  background-color: var(--kuning-tua);
+  color: white;
+  padding: 12px 40px;
+  border-radius: 50px;
+  font-weight: bold;
+  border: none;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.btn-order:hover {
+  background-color: #fdd835;
+  transform: translateY(-10px);
+  color: white;
+  text-decoration: none;
+}
+
+/* Card */
+.card {
+  border-radius: 20px !important;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.text-biru {
+  color: var(--biru-laut);
+  font-weight: 800;
+}
+
+.faq {
+  background-color: var(--biru-muda);
+}
+
+/* Footer */
+.footer-tenten {
+  /* Menggunakan Biru Solid agar kontras dengan teks putih (mirip referensi yang gelap) */
+  background-color: var(--biru-solid);
+  padding: 5% 0; /* Padding atas bawah 5% */
+  color: #fff;
+  margin-top: 5%;
+}
+
+/* Logo di Footer */
+.card-img-wrapper {
+    padding: 10px;       
+}
+
+.card-img-top {
+    border-radius: 10px;
+    object-fit: cover;
+    width: 100%;     
+}
+.card-img {
+    border-radius: 10px;
+    
+    object-fit: cover;
+    width: 100%; 
+    height: 150px;    
+}
+
+.card-produk {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: var(--kuning-muda);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+
+
+.card-produk:hover {
+    transform: scale(1.00);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+h5.card-title {
+    font-weight: 600;
+    color: var(--teks-gelap);
+    margin: 5px;
+    text-align: left;
+}
+
+h5.card-title-menu {
+    font-weight: 500;
+    color: var(--biru-gelap);
+    margin: 10px;
+    text-align: left;
+}
+
+h5.card-title-bake {
+    font-weight: 600;
+    color: var(--teks-gelap);
+    margin: 5px;
+    text-align: center;
+}
+
+p.card-text {
+    color: var(--teks-gelap);
+    margin: 5px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 14px;
+}
+
+p.card-text-bake {
+    color: var(--teks-gelap);
+    margin: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+
+section-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--kuning-tua);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Modal Styles */
+        .modal-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .modal-content {
+            border-radius: 15px;
+        }
+        
+        .modal-header {
+            background-color: #f8f9fa;
+            border-bottom: 2px solid #ffc107;
+        }
+        
+        .modal-title {
+            color: #333;
+            font-weight: bold;
+        }
+        
+        .price-tag {
+            color: #28a745;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .modal-image {
+                height: 150px;
+            }
+            
+            .modal-dialog {
+                margin: 10px;
+            }
+            
+            .modal-title {
+                font-size: 1.2rem;
+            }
+            
+            #modalProductName {
+                font-size: 1.1rem;
+            }
+        }
+        
+        .modal.fade .modal-dialog {
+            transform: translate(0, -50px);
+            transition: transform 0.3s ease-out;
+        }
+        
+        .modal.show .modal-dialog {
+            transform: translate(0, 0);
+        }
+  
