@@ -1,19 +1,16 @@
-/* =========================================================
-   RESET + THEME
-========================================================= */
+
 body {
     background: #f2f4f8;
     font-family: 'Poppins', sans-serif;
     color: #1a1a1a;
 }
 
-/* HERO */
 .hero {
     text-align: center;
     padding: 100px 40px;
     background: linear-gradient(135deg, #64b5f6, #e3f2fd);
     color: white;
-    margin: ;
+    margin: 0;
 }
 
 .cover-menu {
@@ -56,9 +53,6 @@ body {
     display: block;
 }
 
-/* =========================================================
-   PRODUCT CARDS
-========================================================= */
 
 .product-card {
     background: rgba(255,255,255,0.7);
@@ -108,7 +102,7 @@ body {
     color: #555;
 }
 
-/* Prices */
+
 .prices {
     display: flex;
     justify-content: center;
