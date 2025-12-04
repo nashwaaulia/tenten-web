@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function initProductModal() {
     const productModal = document.getElementById('productModal');
+
+    
     if (!productModal) {
         console.warn('Modal produk tidak ditemukan di halaman ini');
         return;
