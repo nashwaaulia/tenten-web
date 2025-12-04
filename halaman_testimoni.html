@@ -5,92 +5,190 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testimoni Pelanggan - Melayu Riau</title>
-    <link rel="icon" type="image/png" href="img/src/logo.jpg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="testimoni.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
     <nav class="navbar navbar-expand-md floating-nav">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
-        Ten
-        <span class="ten">Ten</span>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Produk
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                Ten
+                <span class="ten">Ten</span>
             </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="makanan_riau.html">Makanan Khas Riau</a></li>
-              <li><a class="dropdown-item" href="snack.html">Snack</a></li>
-              <li><a class="dropdown-item" href="donat.html">Donut</a></li>
-              <li><a class="dropdown-item" href="bake.html">Cake and Bakery</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="halaman_promo.html">Promo</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              About Us
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="halaman_testimoni.html">Testimoni</a></li>
-              <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Produk
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="makanan_riau.html">Makanan Khas Riau</a></li>
+                            <li><a class="dropdown-item" href="snack.html">Snack</a></li>
+                            <li><a class="dropdown-item" href="donat.html">Donut</a></li>
+                            <li><a class="dropdown-item" href="bake.html">Cake and Bakery</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="halaman_promo.html">Promo</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="halaman_testimoni.html">Testimoni</a></li>
+                            <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <!-- HERO SECTION -->
     <div class="hero">
         <h1 data-aos="fade-down">Apa Kata Pelanggan?</h1>
-        <h4 data-aos="fade-up">Testimoni jujur dari pelanggan setia makanan khas Melayu Riau</h4>
+        <p data-aos="fade-up">Testimoni jujur dari pelanggan setia makanan khas Melayu Riau</p>
     </div>
 
-    <!-- TESTIMONI SECTION -->
     <div class="container py-5">
-        <div class="row g-4" id="testimoniList"></div>
+        <div class="row g-4" id="testimoniList">
+
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="0">
+                <div class="testimonial-card">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" class="profile-img me-3" alt="Siti Maharani">
+                        <div>
+                            <h5 class="mb-1">Siti Maharani</h5>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Gulai Patinnya SUPER enak! Bumbunya pekat, pedasnya pas."</p>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="testimonial-card">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="profile-img me-3" alt="Rizal Hakim">
+                        <div>
+                            <h5 class="mb-1">Rizal Hakim</h5>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Mie Lendirnya nostalgia banget. Autentik!"</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+                <div class="testimonial-card">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="https://randomuser.me/api/portraits/women/45.jpg" class="profile-img me-3" alt="Nurul Aini">
+                        <div>
+                            <h5 class="mb-1">Nurul Aini</h5>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Kue bangkit lembut dan manisnya pas."</p>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+                <div class="testimonial-card">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" class="profile-img me-3" alt="Ahmad Taufiq">
+                        <div>
+                            <h5 class="mb-1">Ahmad Taufiq</h5>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Asam Pedas Baungnya pedas segar! Nagih!"</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="400">
+                <div class="testimonial-card">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="https://randomuser.me/api/portraits/men/12.jpg" class="profile-img me-3" alt="Fajar Kurniawan">
+                        <div>
+                            <h5 class="mb-1">Fajar Kurniawan</h5>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Roti gambo lembut dan manis pas buat sarapan."</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="500">
+                <div class="testimonial-card">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="https://randomuser.me/api/portraits/women/33.jpg" class="profile-img me-3" alt="Maya Utami">
+                        <div>
+                            <h5 class="mb-1">Maya Utami</h5>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Air Mata Pengantin segar! Cocok siang hari."</p>
+                </div>
+            </div>
+            
+            </div>
     </div>
 
-    <!-- FORM INPUT TESTIMONI -->
-    <div class="container mt-5 p-5">
+    <div class="container mt-5">
         <div class="form-card" data-aos="fade-up">
             <h3 class="text-center mb-3">Tulis Testimoni Anda</h3>
 
-            <form id="testimoniForm">
+            <form id="testimoniForm" novalidate>
                 <div class="mb-3">
                     <label for="nama" class="form-label">Nama Anda</label>
                     <input type="text" id="nama" class="form-control" placeholder="Masukkan nama..." required>
+                    <div class="invalid-feedback">
+                        Nama wajib diisi.
+                    </div>
                 </div>
 
                 <div class="mb-3">
                     <label for="foto" class="form-label">URL Foto Anda</label>
-                    <input type="text" id="foto" class="form-control" placeholder="Masukkan link foto..." required>
+                    <input type="url" id="foto" class="form-control" placeholder="Masukkan link foto..." required>
+                    <div class="invalid-feedback">
+                        URL foto wajib diisi.
+                    </div>
                 </div>
 
                 <div class="mb-3">
                     <label for="komentar" class="form-label">Komentar</label>
                     <textarea id="komentar" class="form-control" rows="3" placeholder="Tulis komentar..."
                         required></textarea>
+                    <div class="invalid-feedback">
+                        Komentar wajib diisi.
+                    </div>
                 </div>
 
-                <div class="mb-3">
+                <div class="mb-3 ">
                     <label for="rating" class="form-label">Rating</label>
                     <select id="rating" class="form-select" required>
                         <option value="">Pilih rating...</option>
@@ -100,6 +198,9 @@
                         <option value="4">4 Bintang</option>
                         <option value="5">5 Bintang</option>
                     </select>
+                    <div class="invalid-feedback">
+                        Rating wajib dipilih.
+                    </div>
                 </div>
 
                 <button type="submit" class="btn btn-primary w-100">Kirim Testimoni</button>
@@ -107,7 +208,7 @@
         </div>
     </div>
 
-    <footer class="main-footer">
+ <footer class="main-footer">
         <div class="container py-3">
             <div class="row">
                 <div class="col-md-4 col-sm-6">
@@ -176,70 +277,12 @@
         </div>
     </footer>
 
-    <script>
-        // DATA TESTIMONI AWAL
-        const testimonials = [
-            { name: "Siti Maharani", img: "https://randomuser.me/api/portraits/women/68.jpg", rate: 4, text: "Jujur awalnya iseng nyoba Bingka Durian, eh malah ketagihan. Wangi duriannya beneran asli, bukan kaleng-kaleng. Teksturnya lembut banget, masuk mulut langsung nyess. Wajib coba!" },
-            { name: "Rizal Hakim", img: "https://randomuser.me/api/portraits/men/32.jpg", rate: 5, text: "Baru tau ada brownies pake ketan hitam, ternyata enak dong! Manisnya pas, gak bikin eneg. Pas banget buat temen ngopi sore-sore. Mantap Tenten!" },
-            { name: "Nurul Aini", img: "https://randomuser.me/api/portraits/women/45.jpg", rate: 3, text: "Akhirnya nemu Bingka Pulut yang rasanya beneran kayak di kampung. Pulut hitamnya legit banget, sensasi bakarnya bikin aromanya makin kuat. Ini sih recommended buat yang rindu makanan Melayu!" },
-            { name: "Ahmad Taufiq", img: "https://randomuser.me/api/portraits/men/75.jpg", rate: 4, text: "Wajib coba Ketan Talam Gula Merah-nya! Legitnya pas, gurih santannya dapet banget. Berasa makan kue buatan Nenek di kampung. Asli bikin kangen rumah!" },
-            { name: "Fajar Kurniawan", img: "https://randomuser.me/api/portraits/men/12.jpg", rate: 4, text: "Warna kuningnya cantik, rasanya otentik banget. Yang paling penting, 'sarangnya' pas! Gak gampang hancur pas dipotong, legitnya nagih. Bika Ambon Tenten emang the best!" },
-            { name: "Maya Utami", img: "https://randomuser.me/api/portraits/women/33.jpg", rate: 4, text: "Beli Steam Rainbow buat ponakan, eh malah saya yang ngabisin. Bolunya lembut parah, gak seret di tenggorokan. Warnanya juga cakep banget buat difoto." }
-        ];
-
-        function renderTestimonials() {
-            let html = "";
-
-            testimonials.forEach((t, i) => {
-                html += `
-                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="${i * 100}">
-                    <div class="testimonial-card">
-                        <div class="d-flex align-items-center mb-3">
-                            <img src="${t.img}" class="profile-img me-3" alt="${t.name}">
-                            <div>
-                                <h5 class="mb-1">${t.name}</h5>
-                                <div class="rating">
-                                    ${'<i class="fa-solid fa-star"></i>'.repeat(t.rate)}
-                                    ${'<i class="fa-regular fa-star"></i>'.repeat(5 - t.rate)}
-                                </div>
-                            </div>
-                        </div>
-                        <p>"${t.text}"</p>
-                    </div>
-                </div>`;
-            });
-
-            document.getElementById("testimoniList").innerHTML = html;
-        }
-
-        document.addEventListener("DOMContentLoaded", renderTestimonials);
-
-        // FORM SUBMIT
-        document.getElementById("testimoniForm").addEventListener("submit", function (e) {
-            e.preventDefault();
-
-            const nama = document.getElementById("nama").value;
-            const foto = document.getElementById("foto").value;
-            const komentar = document.getElementById("komentar").value;
-            const rating = parseInt(document.getElementById("rating").value);
-
-            testimonials.push({
-                name: nama,
-                img: foto,
-                text: komentar,
-                rate: rating
-            });
-
-            renderTestimonials();
-            this.reset();
-        });
-    </script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
     <script src="testimoni.js"></script>
 
 </body>

@@ -6,11 +6,10 @@
   --kuning-muda: #fffde7;
   --kuning-tua: #fbc02d;
   --teks-gelap: #455a64;
-  --biru-gelap: #00496b;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 
@@ -67,6 +66,13 @@ body {
 .dropdown-item.active-page {
   color: var(--kuning-tua) !important;
   font-weight: 700;
+}
+
+.card-title-menu{
+  font-weight: 400;
+  color: var(--teks-gelap);
+  margin: 10px;
+  text-align: justify;
 }
 
 .nav-link.active-page::after {
@@ -234,32 +240,27 @@ body {
   background: linear-gradient(rgba(85, 88, 93, 0.8), rgba(85, 101, 122, 0.8)),
     url("https://www.vieraoleholeh.id/wp-content/uploads/2024/07/Brownies-Donat-Mini.jpg") center/cover no-repeat;
   color: #e0f5ff;
-  text-align: center; 
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 50vh; 
+  min-height: 50vh;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
   font-weight: bold;
 }
 
-.cover-donat {
-  margin-top: 0 !important;
-  padding-top: 20px; 
-  }
-
 .cover-snack {
-   background: linear-gradient(rgba(85, 88, 93, 0.8), rgba(85, 101, 122, 0.8)),
+  background: linear-gradient(rgba(85, 88, 93, 0.8), rgba(85, 101, 122, 0.8)),
     url("https://i.pinimg.com/1200x/b0/2d/bf/b02dbf1c4967c4581c49235d5789ca24.jpg") center/cover no-repeat;
   color: #e0f5ff;
-  text-align: center; 
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 50vh; 
+  min-height: 50vh;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
   font-weight: bold;
@@ -267,29 +268,29 @@ body {
 
 .cover-menu {
   background: linear-gradient(rgba(85, 88, 93, 0.8), rgba(85, 101, 122, 0.8)),
-    url("https://www.vieraoleholeh.id/wp-content/uploads/2024/07/Fudgy-Brownies-Besar.jpg") center/cover no-repeat;
+    url("https://i.pinimg.com/1200x/b0/2d/bf/b02dbf1c4967c4581c49235d5789ca24.jpg") center/cover no-repeat;
   color: #e0f5ff;
-  text-align: center; 
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 50vh; 
+  min-height: 50vh;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
   font-weight: bold;
 }
 
 .cover-cake {
-   background: linear-gradient(rgba(85, 88, 93, 0.8), rgba(85, 101, 122, 0.8)),
-    url("https://www.vieraoleholeh.id/wp-content/uploads/2024/07/Sponge-Cake-2048x1887.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(85, 88, 93, 0.8), rgba(85, 101, 122, 0.8)),
+    url("https://i.pinimg.com/1200x/b0/2d/bf/b02dbf1c4967c4581c49235d5789ca24.jpg") center/cover no-repeat;
   color: #e0f5ff;
-  text-align: center; 
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 50vh; 
+  min-height: 50vh;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
   font-weight: bold;
@@ -299,12 +300,12 @@ body {
   background: linear-gradient(rgba(44, 53, 62, 0.9), rgba(67, 83, 113, 0.7)),
     url("https://www.vieraoleholeh.id/wp-content/uploads/2024/07/Dodol-Durian-Kotak.jpg") center/cover no-repeat;
   color: #e0f5ff;
-  text-align: center; 
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 50vh; 
+  min-height: 50vh;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
   font-weight: bold;
@@ -353,6 +354,7 @@ body {
   overflow: hidden;
   transition: 0.3s;
 }
+
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
@@ -367,83 +369,74 @@ body {
   background-color: var(--biru-muda);
 }
 
+
 /* Footer */
 .footer-tenten {
-  /* Menggunakan Biru Solid agar kontras dengan teks putih (mirip referensi yang gelap) */
   background-color: var(--biru-solid);
-  padding: 5% 0; /* Padding atas bawah 5% */
+  padding: 5% 0;
   color: #fff;
   margin-top: 5%;
 }
 
-/* Logo di Footer */
 .card-img-wrapper {
-    padding: 10px;       
+  padding: 10px;
 }
 
 .card-img-top {
-    border-radius: 10px;
-    object-fit: cover;
-    width: 100%;     
+  border-radius: 10px;
+  object-fit: cover;
+  width: 100%;
 }
+
 .card-img {
-    border-radius: 10px;
-    
-    object-fit: cover;
-    width: 100%; 
-    height: 150px;    
+  border-radius: 10px;
+
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
 }
 
 .card-produk {
-    border: none;
-    border-radius: 12px;
-    overflow: hidden;
-    background-color: var(--kuning-muda);
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: var(--kuning-muda);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
-
-
 .card-produk:hover {
-    transform: scale(1.00);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transform: scale(1.00);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 h5.card-title {
-    font-weight: 600;
-    color: var(--teks-gelap);
-    margin: 5px;
-    text-align: left;
-}
-
-h5.card-title-menu {
-    font-weight: 500;
-    color: var(--biru-gelap);
-    margin: 10px;
-    text-align: left;
+  font-weight: 600;
+  color: var(--teks-gelap);
+  margin: 5px;
+  text-align: left;
 }
 
 h5.card-title-bake {
-    font-weight: 600;
-    color: var(--teks-gelap);
-    margin: 5px;
-    text-align: center;
+  font-weight: 600;
+  color: var(--teks-gelap);
+  margin: 5px;
+  text-align: center;
 }
 
 p.card-text {
-    color: var(--teks-gelap);
-    margin: 5px;
-    margin-bottom: 10px;
-    text-align: left;
-    font-size: 14px;
+  color: var(--teks-gelap);
+  margin: 5px;
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 14px;
 }
 
 p.card-text-bake {
-    color: var(--teks-gelap);
-    margin: 5px;
-    margin-bottom: 10px;
-    text-align: center;
-    font-size: 12px;
+  color: var(--teks-gelap);
+  margin: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 12px;
 }
 
 section-title {
@@ -454,59 +447,101 @@ section-title {
   margin-bottom: 30px;
 }
 
-/* Modal Styles */
-        .modal-image {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 8px;
-            margin-bottom: 15px;
-        }
-        
-        .modal-content {
-            border-radius: 15px;
-        }
-        
-        .modal-header {
-            background-color: #f8f9fa;
-            border-bottom: 2px solid #ffc107;
-        }
-        
-        .modal-title {
-            color: #333;
-            font-weight: bold;
-        }
-        
-        .price-tag {
-            color: #28a745;
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
-        
-        @media (max-width: 768px) {
-            .modal-image {
-                height: 150px;
-            }
-            
-            .modal-dialog {
-                margin: 10px;
-            }
-            
-            .modal-title {
-                font-size: 1.2rem;
-            }
-            
-            #modalProductName {
-                font-size: 1.1rem;
-            }
-        }
-        
-        .modal.fade .modal-dialog {
-            transform: translate(0, -50px);
-            transition: transform 0.3s ease-out;
-        }
-        
-        .modal.show .modal-dialog {
-            transform: translate(0, 0);
-        }
-  
+.modal-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.modal-content {
+  border-radius: 15px;
+}
+
+.modal-header {
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #ffc107;
+}
+
+.modal-title {
+  color: #333;
+  font-weight: bold;
+}
+
+.price-tag {
+  color: #28a745;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Responsif untuk mobile */
+@media (max-width: 768px) {
+  .modal-image {
+    height: 150px;
+  }
+
+  .modal-dialog {
+    margin: 10px;
+  }
+
+  .modal-title {
+    font-size: 1.2rem;
+  }
+
+  #modalProductName {
+    font-size: 1.1rem;
+  }
+}
+
+/* Animasi untuk modal */
+.modal.fade .modal-dialog {
+  transform: translate(0, -50px);
+  transition: transform 0.3s ease-out;
+}
+
+.modal.show .modal-dialog {
+  transform: translate(0, 0);
+}
+
+.hero {
+  background-color: #f8f9fa;
+  padding: 100px 0 50px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-weight: bold;
+ }
+.testimonial-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  transition: transform 0.3s;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.profile-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.rating i.fa-solid {
+  color: gold;
+}
+
+.form-card {
+  max-width: 600px;
+  margin: auto;
+  padding: 30px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
